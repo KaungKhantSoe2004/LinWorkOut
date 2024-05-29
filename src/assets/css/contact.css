@@ -1,0 +1,10 @@
+.contactContainer {
+}
+.postBtn {
+  background-color: red;
+  color: white;
+}
+.postBtn:hover {
+  cursor: pointer;
+  background-color: #2dc22d;
+}

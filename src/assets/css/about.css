@@ -1,0 +1,67 @@
+.aboutPage {
+  top: 20vh;
+}
+.aboutContainer {
+  height: 60vh;
+}
+.aboutLin {
+  color: #2dc22d;
+  margin-left: 0.5rem;
+}
+.coachSection {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.coachSection > div {
+  /* background-color: #2dc22d; */
+  border: solid 1px #2dc22d;
+  cursor: pointer;
+}
+.coachTrainer {
+  position: relative;
+  overflow: hidden;
+}
+.coachImg {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.coachText {
+  background-color: black;
+  /* #273227 */
+  opacity: 1;
+  width: 100%;
+  height: 20%;
+  bottom: -100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 0.5s ease;
+}
+.coachTrainer:hover {
+  position: relative;
+}
+.coachTrainer:hover .coachImg {
+  opacity: 0.8;
+}
+.coachTrainer:hover .coachText {
+  opacity: 0.9;
+
+  position: absolute;
+  bottom: 0;
+}
+@media (max-width: 710px) {
+  .aboutLin {
+    font-size: 1.3rem;
+  }
+  .aboutPara {
+    font-size: 0.8rem;
+  }
+  .coachSection {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

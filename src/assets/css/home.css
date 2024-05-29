@@ -1,0 +1,133 @@
+.homePage {
+  /* height: 10000px; */
+}
+.image {
+  z-index: 0;
+  width: 100%;
+}
+.absoluteText {
+  top: 65%;
+  left: 9%;
+}
+.absoluteText > h1 {
+  color: #2dc22d;
+}
+.dot {
+  color: #2dc22d;
+}
+.chooseText {
+  color: #2dc22d;
+}
+.searchBar {
+}
+.bodyPartImg {
+  background-color: #2dc22d;
+  width: 40px;
+  color: #2dc22d;
+  height: 40px;
+}
+.recommendedContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.exBoxText {
+  left: -2%;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  top: 0;
+  transition: all 0.4s ease;
+}
+.exerciseBox:hover .exBoxText {
+  left: 0;
+  opacity: 1;
+  z-index: 2;
+}
+.exerciseBox {
+  cursor: pointer;
+}
+.textContainer {
+  border-left: solid 10px #2dc22d;
+  margin-bottom: 5px;
+}
+.exerciseBox:hover .gifContainer {
+  opacity: 0.3;
+  background-color: #142714;
+}
+.videoContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.videoImg {
+  width: 80%;
+  height: 120%;
+}
+
+.bodyPartExerciseContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.paginationWrap {
+}
+.pagination {
+  overflow: hidden;
+}
+
+.foodCalorieLine {
+  border-top: dotted 2px;
+}
+
+.favBtn:hover {
+  cursor: pointer;
+  color: #2dc22d;
+}
+/* Hide scrollbar for IE 10+ */
+/* .paginationWrap {
+  -ms-overflow-style: none;
+} */
+*/ .paginator {
+  background-color: #2dc22d;
+  border-radius: 40px;
+}
+@media (max-width: 900px) {
+  .recommendedContainer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 1200px) {
+  .absoluteText {
+    top: 50%;
+  }
+  .videoContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .bodyPartExerciseContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 1025px) {
+  .absoluteText {
+    top: 30%;
+  }
+  .absoluteText > h4 {
+    font-size: 1.2rem;
+  }
+  .absoluteText > h1 {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 500px) {
+  .absoluteText {
+    top: 20%;
+  }
+  .absoluteText > h4 {
+    font-size: 1rem;
+  }
+  .absoluteText > h1 {
+    font-size: 1.2rem;
+  }
+}

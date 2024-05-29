@@ -1,0 +1,28 @@
+
+.servicesBoxContainer {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+}
+.servicesBox {
+  border: solid 1px rgb(69, 57, 57);
+  margin-top: 10px;
+}
+.servicesLogo {
+  color: #2dc22d;
+}
+.servicesBox:hover {
+  background-color: rgb(37, 36, 36);
+  box-shadow: 2em 0.85em 5px rgb(2, 2, 2);
+  cursor: pointer;
+  color: black;
+}
+.servicesBox:hover .servicesLogo {
+}
+@media (max-width: 700px) {
+  .servicesBoxContainer {
+    display: grid;
+
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
