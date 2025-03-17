@@ -77,10 +77,7 @@
   cursor: pointer;
   color: #2dc22d;
 }
-/* Hide scrollbar for IE 10+ */
-/* .paginationWrap {
-  -ms-overflow-style: none;
-} */
+
 * .paginator {
   background-color: #2dc22d;
   border-radius: 40px;
